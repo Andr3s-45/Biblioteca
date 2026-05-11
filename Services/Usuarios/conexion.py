@@ -1,0 +1,16 @@
+from flask import Flask, request, jsonify
+from flask_restful import Api, Resource
+import mysql.connector
+import hashlib
+
+
+
+mi_db = mysql.connector.connect(
+    host= "localhost",
+    port= 3306,
+    user= "root",
+    password= "",
+    database = "biblioteca_2"
+)
+
+mi_cursor = mi_db.cursor()
