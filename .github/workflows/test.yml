@@ -44,7 +44,7 @@ jobs:
           pip install pytest requests
       # Se levanta el microservicio en segundo plano
       - name: Ejecución del microservicio
-        run: |
+        run: 
           python Services/Usuarios/app.py &
           python Services/Paises/app.py &
           python Services/Editoriales/app.py &
@@ -59,7 +59,7 @@ jobs:
           DB_PASSWORD: root
           DB_NAME: biblioteca_2
         # Se especifica carpeta para los tests
-        run: |
+        run:
           pytest  Services/Usuarios/test_usuarios.py
 
           pytest Services/Paises/test_paises.py
