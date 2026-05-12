@@ -35,7 +35,7 @@ jobs:
       - name: Preparación Base de Datos
         run: |
           mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS biblioteca;"
-          mysql -h 127.0.0.1 -u root -proot biblioteca < biblioteca.sql
+          mysql -h 127.0.0.1 -u root -proot biblioteca < biblioteca_2.sql
       # Se instalan dependencias para microservicios y pruebas
       - name: Instalar dependencias
         run: |
@@ -53,7 +53,13 @@ jobs:
           DB_HOST: 127.0.0.1
           DB_USER: root
           DB_PASSWORD: root
-          DB_NAME: biblioteca
+          DB_NAME: biblioteca_2
         # Se especifica carpeta para los tests
         run: |
-          pytest  services/usuarios/test_usuarios.py
+          pytest  Services/Usuarios/test_usuarios.py
+
+          pytest Services/Paises/test_paises.py
+
+          pytest Services/Editoriales/test_editoriales.py
+
+          pytest Services/Autores/test_autores.py
