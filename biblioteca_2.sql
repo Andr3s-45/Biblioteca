@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-05-2026 a las 23:33:37
+-- Tiempo de generación: 13-05-2026 a las 01:04:35
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -121,7 +121,6 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`idUsuario`, `nombre`, `contrasena`) VALUES
 ('afv', 'Juan C Posada', '0549ab26aefcba2df2f37dc4a2820597b0142f86ac8984214951c44621b63d1696f03cc3093ba1c7c88a7259d5cc83e7396e1614d1a5f3c3c0ad96e70cdfd0d7'),
-('final881', 'Fidel Nalisco', '7e2feac95dcd7d1df803345e197369af4b156e4e7a95fcb2955bdbbb3a11afd8bb9d35931bf15511370b18143e38b01b903f55c5ecbded4af99934602fcdf38c'),
 ('frank', 'Frank', '1234'),
 ('hernando', 'Hernando', '4321');
 
