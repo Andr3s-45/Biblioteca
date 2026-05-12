@@ -60,10 +60,10 @@ jobs:
           DB_NAME: biblioteca_2
         # Se especifica carpeta para los tests
         run:
-          pytest  Services/Usuarios/test_usuarios.py
+          pytest Biblioteca/Services/Usuarios/test_usuarios.py
 
-          pytest Services/Paises/test_paises.py
+          pytest Biblioteca/Services/Paises/test_paises.py
 
-          pytest Services/Editoriales/test_editoriales.py
+          pytest Biblioteca/Services/Editoriales/test_editoriales.py
 
-          pytest Services/Autores/test_autores.py
+          pytest Biblioteca/Services/Autores/test_autores.py
