@@ -45,7 +45,11 @@ jobs:
       # Se levanta el microservicio en segundo plano
       - name: Ejecución del microservicio
         run: |
-          python services/usuarios/app.py &
+          python Services/Usuarios/app.py &
+          python Services/Paises/app.py &
+          python Services/Editoriales/app.py &
+          python Services/Autores/app.py &
+
       # Se ejecutan las pruebas
       - name: Ejecución pruebas con Pytest
         env:
