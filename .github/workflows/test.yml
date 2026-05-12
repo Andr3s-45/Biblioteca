@@ -34,8 +34,8 @@ jobs:
       # Se prepara la base de datos
       - name: Preparación Base de Datos
         run: |
-          mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS biblioteca;"
-          mysql -h 127.0.0.1 -u root -proot biblioteca < biblioteca_2.sql
+          mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS biblioteca_2;"
+          mysql -h 127.0.0.1 -u root -proot biblioteca_2 < biblioteca_2.sql
       # Se instalan dependencias para microservicios y pruebas
       - name: Instalar dependencias
         run: |
