@@ -45,10 +45,10 @@ jobs:
       # Se levanta el microservicio en segundo plano
       - name: Ejecución del microservicio
         run: 
-          python Biblioteca/Biblioteca/Services/Usuarios/app.py &
-          python Biblioteca/Biblioteca/Services/Paises/app.py &
-          python Biblioteca/Biblioteca/Services/Editoriales/app.py &
-          python Biblioteca/Biblioteca/Services/Autores/app.py &
+          python Services/Usuarios/app.py &
+          python Services/Paises/app.py &
+          python Services/Editoriales/app.py &
+          python Services/Autores/app.py &
 
       # Se ejecutan las pruebas
       - name: Ejecución pruebas con Pytest
@@ -60,10 +60,10 @@ jobs:
           DB_NAME: biblioteca_2
         # Se especifica carpeta para los tests
         run:
-          pytest Biblioteca/Biblioteca/Services/Usuarios/test_usuarios.py
+          pytest Services/Usuarios/test_usuarios.py
 
-          pytest Biblioteca/Biblioteca/Services/Paises/test_paises.py
+          pytest Services/Paises/test_paises.py
 
-          pytest Biblioteca/Biblioteca/Services/Editoriales/test_editoriales.py
+          pytest Services/Editoriales/test_editoriales.py
 
-          pytest Biblioteca/Biblioteca/Services/Autores/test_autores.py
+          pytest Services/Autores/test_autores.py
