@@ -1,4 +1,4 @@
-from Services.Editoriales.conexion import *
+from conexion import *
 import pytest
 import requests
 

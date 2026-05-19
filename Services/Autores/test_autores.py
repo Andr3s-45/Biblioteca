@@ -1,4 +1,4 @@
-from Services.Autores.conexion import *
+from conexion import *
 import pytest
 import requests
 
