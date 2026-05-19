@@ -5,7 +5,7 @@ import requests
 class Test_paises:
 
     def setup_class(self):
-        self.url = "http://localhost:5084/paises"
+        self.url = "http://localhost:5081/paises"
         id = "PP"
         nombre = "Pais_Prueba"
         continente = "Asia"
