@@ -25,7 +25,6 @@ jobs:
         command: --default-authentication-plugin=mysql_native_password
     steps:
       # Se descarga el repositorio a la máquina virtual
-      # Se descarga el repositorio a la máquina virtual
       - name: Checkout del código
         uses: actions/checkout@v3
       # Se instala python 
